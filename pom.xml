@@ -7,7 +7,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.1.1</version>
+        <version>3.5.16</version>
         <relativePath/>
     </parent>
 
@@ -23,10 +23,9 @@
     </properties>
 
     <dependencies>
-        <!-- Spring Boot 4 renombro spring-boot-starter-web a spring-boot-starter-webmvc -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-webmvc</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
