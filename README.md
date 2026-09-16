@@ -9,7 +9,7 @@ Cuando varias tarifas solapan en el tiempo, se aplica la de mayor prioridad.
 
 ## Ejecucion
 
-Requisitos: **JDK 17** (LTS) y Maven 3.8 o superior.
+Requisitos: **JDK 21** (LTS) y Maven 3.8 o superior.
 
 ```bash
 mvn spring-boot:run
