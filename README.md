@@ -65,7 +65,7 @@ mvn test
 Los errores se devuelven en formato **Problem Details (RFC 7807)**.
 
 Los criterios de búsqueda viajan como parámetros de consulta y no en la ruta
-porque filtran un recurso en lugar de identificarlo jerarquicamente. La ruta
+porque filtran un recurso en lugar de identificarlo jerárquicamente. La ruta
 lleva versión explícita para poder evolucionar el contrato sin romper clientes.
 
 ---
@@ -113,9 +113,9 @@ desambiguador de la selección, no un atributo de la tarifa ya seleccionada.
 
 **El precio es `BigDecimal` y viaja junto a su moneda** en un objeto `Money`.
 La coma flotante binaria no representa exactamente valores como 35,50, y un
-importe sin divisa invita a sumar euros con dolares.
+importe sin divisa invita a sumar euros con dólares.
 
-**El puerto de salida devuelve `Optional` en lugar de lanzar una excepcion.**
+**El puerto de salida devuelve `Optional` en lugar de lanzar una excepción.**
 Para el repositorio, que no exista tarifa es un resultado posible. Quien decide
 que eso significa un 404 es el adaptador REST, a partir de la excepción de
 dominio que lanza el caso de uso. El dominio nunca conoce códigos HTTP.
