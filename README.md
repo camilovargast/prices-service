@@ -74,6 +74,8 @@ lleva versión explícita para poder evolucionar el contrato sin romper clientes
 
 Arquitectura hexagonal (puertos y adaptadores) en un único módulo Maven.
 
+![Prices Service · arquitectura hexagonal](docs/arquitectura-hexagonal.svg)
+
 ```
 domain/                     núcleo: no importa Spring, ni JPA, ni Jackson
   model/                      Price, DateRange, Money
@@ -86,7 +88,8 @@ application/                caso de uso: orquesta dominio y puertos
 
 infrastructure/             lo único que conoce frameworks y protocolos
   adapter/in/rest/            PriceController, PriceResponse, RestExceptionHandler
-  adapter/out/persistence/    PriceEntity, PriceJpaRepository, PriceRepositoryAdapter
+  adapter/out/persistence/    PriceEntity, PriceEntityMapper, PriceJpaRepository,
+                              PriceRepositoryAdapter
   config/                     UseCaseConfiguration
 ```
 
